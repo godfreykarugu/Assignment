@@ -5,7 +5,7 @@
     <title>Title</title>
     <style>
         .container {
-            background: #000;
+            background: #000000;
           max-height: 100vh;
         }
         .row {
@@ -14,20 +14,44 @@
             justify-content: space-between;
 
         }
+        h2 {
+            /* text-align: center; */
+            color: #fff;
+          
+        }
 
         .col-l, .col-r{
             flex-basis: 45%;
             padding: 50px 25px;
+            max-height: 500px;
         }
+
+        .col-l {
+            filter: grayscale(100%);
+
+        }
+
         input,textarea {
             border-radius: 10px;
-            padding: 10px 20px;
-            background: transparent;
+            padding: 20px 30px;
+            background: rgb(30, 30, 30);
             color: #fff;
+            margin: 5px 0 0 10px ;
+                
+            outline: none;
+
+             /* border: none;
+            border-bottom: 1px solid #ccc;
+            border-radius: 3px;
+            transition: border-bottom 0.5s ease;  */
+           
+        
         }
+    
 
         ::placeholder{
             color: #fff;
+             font-size: 18px; 
         }
 
         button {
@@ -58,9 +82,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-l">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7977.656810805582!2d36.81983793413483!3d-1.2763476686207267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sapen%20softwares!5e0!3m2!1sen!2ske!4v1709958010825!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h2>Where we are</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7977.656810805582!2d36.81983793413483!3d-1.2763476686207267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sapen%20softwares!5e0!3m2!1sen!2ske!4v1709958010825!5m2!1sen!2ske" width="600" height="400" style="border:1px solid #fff; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-r">
+                    <h2>send us a message</h2>
                     <form action="">
                         <input type="text" placeholder="First Name">
                         <input type="email" placeholder="email"> <br><br>
