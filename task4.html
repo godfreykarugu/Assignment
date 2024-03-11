@@ -7,6 +7,7 @@
         .container {
             background: #000000;
           max-height: 100vh;
+          padding-bottom: 30px;
         }
         .row {
             display: flex;
@@ -31,17 +32,24 @@
 
         }
 
+        
+        .col-l:hover{
+            filter: grayscale(0);
+
+        }
+
+
         input,textarea {
             border-radius: 10px;
             padding: 20px 30px;
-            background: rgb(30, 30, 30);
+            background: rgb(20, 20, 20);
             color: #fff;
             margin: 5px 0 0 10px ;
                 
             outline: none;
 
-             /* border: none;
-            border-bottom: 1px solid #ccc;
+              border: none;
+           /* border-bottom: 1px solid #ccc;
             border-radius: 3px;
             transition: border-bottom 0.5s ease;  */
            
@@ -53,19 +61,34 @@
             color: #fff;
              font-size: 18px; 
         }
-
         button {
-            padding: 10px 50px;
-            border-radius: 15px;
-            cursor: pointer;
-            background: transparent;
-            color: #fff;
-        }
+    width: 200px;
+    height: 50px;
+    /* text-align: center; */
+    margin: 10px 20px;
+    border: 2px solid #009688;
+    background: transparent;
+    color: red;
+    border-radius: 25px;
+    position: relative;
+     overflow: hidden;
+}
 
-        button:hover {
-            background: #fff;
-            color: #000;
-        }
+span{
+    width: 0;
+    height: 100%;
+    background: #009688;
+    position: absolute;
+   border-radius: 25px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+} 
 
         form {
             border: 1px solid #ffffff;
@@ -92,9 +115,9 @@
                         <input type="email" placeholder="email"> <br><br>
                         <input type="number" placeholder="number">
                         <input type="text" placeholder="subject"> <br><br>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="about us"></textarea> <br><br>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="about us" style="width: 400px;"></textarea> <br><br>
 <!--                        <input type="submit" value="submit">-->
-                        <button>submit</button>
+                        <button><span></span>submit</button>
                     </form>
                 </div>
             </div>
